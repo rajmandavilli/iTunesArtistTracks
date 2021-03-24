@@ -9,6 +9,8 @@ import XCTest
 @testable import ArtistsFromiTunes
 
 class ArtistsFromiTunesTests: XCTestCase {
+    
+    let viewModel = ArtistTracksViewModel()
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -18,16 +20,19 @@ class ArtistsFromiTunesTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testFetchArtistTracks() {
+        // Given
+        MockArtistRequests.getTracks(artistName: "Pink Floyd", completion: { result in
+            switch result {
+            case .success(let tracksJSON):
+                self.viewModel.getTracksFromJSON(tracksJSON)
+            case .failure(let error):
+                print(error)
+            }
+        })
+        
+        // Then
+        XCTAssertEqual(self.viewModel.tracks.count, 50)
     }
 
 }

@@ -9,12 +9,30 @@
 /* Begin PBXBuildFile section */
 		86FBF324260AB49700846A6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF323260AB49700846A6C /* AppDelegate.swift */; };
 		86FBF326260AB49700846A6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF325260AB49700846A6C /* SceneDelegate.swift */; };
-		86FBF328260AB49700846A6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF327260AB49700846A6C /* ViewController.swift */; };
 		86FBF32B260AB49700846A6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FBF329260AB49700846A6C /* Main.storyboard */; };
 		86FBF32D260AB49700846A6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FBF32C260AB49700846A6C /* Assets.xcassets */; };
 		86FBF330260AB49700846A6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FBF32E260AB49700846A6C /* LaunchScreen.storyboard */; };
 		86FBF33B260AB49800846A6C /* ArtistsFromiTunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF33A260AB49800846A6C /* ArtistsFromiTunesTests.swift */; };
 		86FBF346260AB49800846A6C /* ArtistsFromiTunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF345260AB49800846A6C /* ArtistsFromiTunesUITests.swift */; };
+		86FBF359260AB50F00846A6C /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF358260AB50F00846A6C /* EndPointType.swift */; };
+		86FBF35E260AB55E00846A6C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF35D260AB55E00846A6C /* HTTPMethod.swift */; };
+		86FBF363260AB57A00846A6C /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF362260AB57A00846A6C /* HTTPTask.swift */; };
+		86FBF368260AB59A00846A6C /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF367260AB59A00846A6C /* NetworkRouter.swift */; };
+		86FBF36D260AB5F400846A6C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF36C260AB5F400846A6C /* Router.swift */; };
+		86FBF378260AB65800846A6C /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF377260AB65800846A6C /* ParameterEncoding.swift */; };
+		86FBF380260AB68400846A6C /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF37F260AB68400846A6C /* JSONParameterEncoder.swift */; };
+		86FBF385260AB6A100846A6C /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF384260AB6A100846A6C /* URLParameterEncoder.swift */; };
+		86FBF38B260AB6DB00846A6C /* HTTPNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF38A260AB6DB00846A6C /* HTTPNetworkError.swift */; };
+		86FBF390260AB70300846A6C /* HTTPNetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF38F260AB70300846A6C /* HTTPNetworkConstants.swift */; };
+		86FBF397260AB79F00846A6C /* ArtistEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF396260AB79F00846A6C /* ArtistEndPoint.swift */; };
+		86FBF39C260AB97000846A6C /* ArtistRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF39B260AB97000846A6C /* ArtistRequests.swift */; };
+		86FBF3A2260ABCA200846A6C /* TrackDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF3A1260ABCA200846A6C /* TrackDataModel.swift */; };
+		86FBF3AE260ABFD100846A6C /* ArtistTracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF3AD260ABFD100846A6C /* ArtistTracksViewController.swift */; };
+		86FBF3B3260ABFEC00846A6C /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF3B2260ABFEC00846A6C /* TrackTableViewCell.swift */; };
+		86FBF3B8260AC32700846A6C /* ArtistTracksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF3B7260AC32700846A6C /* ArtistTracksViewModel.swift */; };
+		86FBF3C3260AEDBA00846A6C /* StringParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF3C2260AEDBA00846A6C /* StringParameterEncoding.swift */; };
+		86FBF3CA260B095F00846A6C /* MockArtistRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FBF3C9260B095F00846A6C /* MockArtistRequests.swift */; };
+		86FBF3D2260B0AB400846A6C /* PinkFloydTracks.json in Resources */ = {isa = PBXBuildFile; fileRef = 86FBF3D1260B0AB400846A6C /* PinkFloydTracks.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +56,6 @@
 		86FBF320260AB49700846A6C /* ArtistsFromiTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtistsFromiTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FBF323260AB49700846A6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86FBF325260AB49700846A6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		86FBF327260AB49700846A6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		86FBF32A260AB49700846A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86FBF32C260AB49700846A6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86FBF32F260AB49700846A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +66,25 @@
 		86FBF341260AB49800846A6C /* ArtistsFromiTunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtistsFromiTunesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FBF345260AB49800846A6C /* ArtistsFromiTunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsFromiTunesUITests.swift; sourceTree = "<group>"; };
 		86FBF347260AB49800846A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86FBF358260AB50F00846A6C /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		86FBF35D260AB55E00846A6C /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		86FBF362260AB57A00846A6C /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		86FBF367260AB59A00846A6C /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		86FBF36C260AB5F400846A6C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		86FBF377260AB65800846A6C /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		86FBF37F260AB68400846A6C /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		86FBF384260AB6A100846A6C /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		86FBF38A260AB6DB00846A6C /* HTTPNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPNetworkError.swift; sourceTree = "<group>"; };
+		86FBF38F260AB70300846A6C /* HTTPNetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPNetworkConstants.swift; sourceTree = "<group>"; };
+		86FBF396260AB79F00846A6C /* ArtistEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistEndPoint.swift; sourceTree = "<group>"; };
+		86FBF39B260AB97000846A6C /* ArtistRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistRequests.swift; sourceTree = "<group>"; };
+		86FBF3A1260ABCA200846A6C /* TrackDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDataModel.swift; sourceTree = "<group>"; };
+		86FBF3AD260ABFD100846A6C /* ArtistTracksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTracksViewController.swift; sourceTree = "<group>"; };
+		86FBF3B2260ABFEC00846A6C /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		86FBF3B7260AC32700846A6C /* ArtistTracksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTracksViewModel.swift; sourceTree = "<group>"; };
+		86FBF3C2260AEDBA00846A6C /* StringParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringParameterEncoding.swift; sourceTree = "<group>"; };
+		86FBF3C9260B095F00846A6C /* MockArtistRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockArtistRequests.swift; sourceTree = "<group>"; };
+		86FBF3D1260B0AB400846A6C /* PinkFloydTracks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PinkFloydTracks.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +135,11 @@
 		86FBF322260AB49700846A6C /* ArtistsFromiTunes */ = {
 			isa = PBXGroup;
 			children = (
+				86FBF3AC260ABFAB00846A6C /* Views */,
+				86FBF3A0260ABA6B00846A6C /* Models */,
+				86FBF356260AB4EA00846A6C /* Networking */,
 				86FBF323260AB49700846A6C /* AppDelegate.swift */,
 				86FBF325260AB49700846A6C /* SceneDelegate.swift */,
-				86FBF327260AB49700846A6C /* ViewController.swift */,
 				86FBF329260AB49700846A6C /* Main.storyboard */,
 				86FBF32C260AB49700846A6C /* Assets.xcassets */,
 				86FBF32E260AB49700846A6C /* LaunchScreen.storyboard */,
@@ -113,6 +151,8 @@
 		86FBF339260AB49800846A6C /* ArtistsFromiTunesTests */ = {
 			isa = PBXGroup;
 			children = (
+				86FBF3C8260B093600846A6C /* Mocks */,
+				86FBF3C7260B092700846A6C /* TestData */,
 				86FBF33A260AB49800846A6C /* ArtistsFromiTunesTests.swift */,
 				86FBF33C260AB49800846A6C /* Info.plist */,
 			);
@@ -126,6 +166,100 @@
 				86FBF347260AB49800846A6C /* Info.plist */,
 			);
 			path = ArtistsFromiTunesUITests;
+			sourceTree = "<group>";
+		};
+		86FBF356260AB4EA00846A6C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				86FBF395260AB72100846A6C /* Requests */,
+				86FBF394260AB71600846A6C /* EndPoint */,
+				86FBF389260AB6C100846A6C /* HTTP */,
+				86FBF376260AB63A00846A6C /* Encoding */,
+				86FBF357260AB4F800846A6C /* Service */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		86FBF357260AB4F800846A6C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				86FBF358260AB50F00846A6C /* EndPointType.swift */,
+				86FBF35D260AB55E00846A6C /* HTTPMethod.swift */,
+				86FBF362260AB57A00846A6C /* HTTPTask.swift */,
+				86FBF367260AB59A00846A6C /* NetworkRouter.swift */,
+				86FBF36C260AB5F400846A6C /* Router.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		86FBF376260AB63A00846A6C /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				86FBF377260AB65800846A6C /* ParameterEncoding.swift */,
+				86FBF37F260AB68400846A6C /* JSONParameterEncoder.swift */,
+				86FBF384260AB6A100846A6C /* URLParameterEncoder.swift */,
+				86FBF3C2260AEDBA00846A6C /* StringParameterEncoding.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		86FBF389260AB6C100846A6C /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				86FBF38A260AB6DB00846A6C /* HTTPNetworkError.swift */,
+				86FBF38F260AB70300846A6C /* HTTPNetworkConstants.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		86FBF394260AB71600846A6C /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				86FBF396260AB79F00846A6C /* ArtistEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		86FBF395260AB72100846A6C /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				86FBF39B260AB97000846A6C /* ArtistRequests.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		86FBF3A0260ABA6B00846A6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86FBF3B7260AC32700846A6C /* ArtistTracksViewModel.swift */,
+				86FBF3A1260ABCA200846A6C /* TrackDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		86FBF3AC260ABFAB00846A6C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				86FBF3AD260ABFD100846A6C /* ArtistTracksViewController.swift */,
+				86FBF3B2260ABFEC00846A6C /* TrackTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		86FBF3C7260B092700846A6C /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				86FBF3D1260B0AB400846A6C /* PinkFloydTracks.json */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
+		86FBF3C8260B093600846A6C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				86FBF3C9260B095F00846A6C /* MockArtistRequests.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86FBF3D2260B0AB400846A6C /* PinkFloydTracks.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +393,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86FBF328260AB49700846A6C /* ViewController.swift in Sources */,
+				86FBF36D260AB5F400846A6C /* Router.swift in Sources */,
+				86FBF363260AB57A00846A6C /* HTTPTask.swift in Sources */,
+				86FBF3AE260ABFD100846A6C /* ArtistTracksViewController.swift in Sources */,
+				86FBF39C260AB97000846A6C /* ArtistRequests.swift in Sources */,
+				86FBF378260AB65800846A6C /* ParameterEncoding.swift in Sources */,
+				86FBF390260AB70300846A6C /* HTTPNetworkConstants.swift in Sources */,
+				86FBF3A2260ABCA200846A6C /* TrackDataModel.swift in Sources */,
+				86FBF380260AB68400846A6C /* JSONParameterEncoder.swift in Sources */,
+				86FBF359260AB50F00846A6C /* EndPointType.swift in Sources */,
 				86FBF324260AB49700846A6C /* AppDelegate.swift in Sources */,
+				86FBF385260AB6A100846A6C /* URLParameterEncoder.swift in Sources */,
+				86FBF35E260AB55E00846A6C /* HTTPMethod.swift in Sources */,
+				86FBF3B3260ABFEC00846A6C /* TrackTableViewCell.swift in Sources */,
+				86FBF3B8260AC32700846A6C /* ArtistTracksViewModel.swift in Sources */,
 				86FBF326260AB49700846A6C /* SceneDelegate.swift in Sources */,
+				86FBF38B260AB6DB00846A6C /* HTTPNetworkError.swift in Sources */,
+				86FBF397260AB79F00846A6C /* ArtistEndPoint.swift in Sources */,
+				86FBF368260AB59A00846A6C /* NetworkRouter.swift in Sources */,
+				86FBF3C3260AEDBA00846A6C /* StringParameterEncoding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86FBF3CA260B095F00846A6C /* MockArtistRequests.swift in Sources */,
 				86FBF33B260AB49800846A6C /* ArtistsFromiTunesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
